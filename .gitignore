@@ -1,2 +1,4 @@
 #Eclipse workspace
 .metadata/
+.project
+.pydevproject
