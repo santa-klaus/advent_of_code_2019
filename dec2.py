@@ -1,8 +1,4 @@
 # # December 2
-# Read input
-with open('dec2_input.txt','r') as fin:
-    data = [int(y) for x in fin.read().splitlines() for y in x.split(',')]
-
 # Define intcode program
 def intcode(instruction,noun,verb):
     instruction[1:3] = [noun,verb]
@@ -25,6 +21,11 @@ def intcode(instruction,noun,verb):
         opcode = instruction[pos]
         
     return instruction[0]
+
+# Read input
+with open('dec2_input.txt','r') as fin:
+    data = [int(y) for x in fin.read().splitlines() for y in x.split(',')]
+
 
 # Part 1
 # Permute program input following instructions

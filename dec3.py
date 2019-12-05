@@ -39,3 +39,11 @@ print(crossings[distance.index(min(distance))])
 print('Distance of closest intersection:')
 print((min(distance)))
 
+# Part two, calculate the steps necessary
+steps = [cable1.index(x) + cable2.index(x) for x in crossings]
+
+print('Intersection with the fewest steps:')
+print(crossings[steps.index(min(steps))])
+print('Fewest steps:')
+print((min(steps)))
+
